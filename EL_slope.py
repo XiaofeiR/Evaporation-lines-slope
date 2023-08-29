@@ -4,15 +4,13 @@
 # @Time      : 2023/3/29 15:50
 # @FileName  : EL_slope.py
 # @Software  : PyCharm
+# purpose    : Calculate the slope of EL
 
 import numpy as np
-# 计算蒸发线的斜率
-
 
 
 #-----------------------------------------------------------
-# 平衡分馏系数 α+  经验公式来自：Horita and Wesolowski, 1994
-# 仅仅是T（K）的函数, 绝对温度 k
+# Calculate α+ ： The calculation formula comes from Horita and Wesolowski(1994)
 # α+ is the liquid-vapor equilibrium isotopic fractionation
 
 def Tk(t):
