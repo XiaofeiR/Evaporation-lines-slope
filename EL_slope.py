@@ -3,7 +3,6 @@
 # @Author    : Xiaofei Ren
 # @Time      : 2023/3/29 15:50
 # @FileName  : EL_slope.py
-# @Software  : PyCharm
 # purpose    : Calculate the slope of EL
 
 import numpy as np
