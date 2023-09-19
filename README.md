@@ -1,5 +1,6 @@
 # Evaporation-lines-slope
 
-文件说明
+***The repository will be updated after submitting the manuscript ***
 
-用于计算蒸发线斜率的代码
+require： QGIS, python
+
