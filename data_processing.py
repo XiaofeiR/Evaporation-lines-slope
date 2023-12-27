@@ -218,11 +218,11 @@ def get_A_values(A):
     return pd.DataFrame(data, columns=['lon', 'lat', 'month', 't2m', 'rh', '2H', '18O'])
 
 
-# 读取网格气象数据 Reading climate data
-mean_EAR5 = pd.read_excel(r"D:\我的坚果云\同位素\Data\climate_station\meanEAR5.xlsx")
+# Reading climate data
+mean_EAR5 = pd.read_excel(r"D:\Data\climate_station\meanEAR5.xlsx")
 
-# 读取网格点稳定同位素数据 Reading isotope data
-iso_data = pd.read_csv(r"D:\我的坚果云\同位素\Data\collection data\C-Iso-GuanZhong2.csv")
+#  Reading isotope data
+iso_data = pd.read_csv(r"D:\Data\collection data\C-Iso-GuanZhong2.csv")
 
 
 l0 = selectLayer('EL_slope')         # Slope layer
@@ -261,6 +261,6 @@ Data = pd.concat(Data, axis=0)
 print('Using time：' + str(time.time() - T1) + 'S')
 
 # save the data to a table
-Data.to_csv(r"D:\我的坚果云\同位素\Data\EL计算点的数据表.csv", index=False)
+Data.to_csv(r"D:\Data\EL_df.csv", index=False)
 
 
